@@ -1,0 +1,26 @@
+<h2>Deciphering Java Enum Constructors</h2>
+<div class="step-text">
+<p>Consider the following code snippet of a Java enum `TimeZone`:<br/></p><pre><code class="java">public enum TimeZone {
+
+  PST("Pacific Standard Time", -8),
+  MST("Mountain Standard Time", -7),
+  CST("Central Standard Time", -6),
+  EST("Eastern Standard Time", -5);
+
+  private final String desc;
+  private final int offset;
+
+  TimeZone(String desc, int offset) {
+    this.desc = desc;
+    this.offset = offset;
+  }
+
+  public String getDesc() {
+    return desc;
+  }
+
+  public int getOffset() {
+    return offset;
+  }
+}</code></pre><br/>Based on the understanding of enum in Java and the code snippet above, which of the following statements are correct?
+</div>

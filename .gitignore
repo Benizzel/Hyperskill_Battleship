@@ -1,0 +1,24 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Battleship/*
+!/Battleship/task/
+/Battleship/task/*
+!/Battleship/task/src
+
+# Project exclude paths
+/Topics/Combining constants with enum/Days of week/out/
+/Topics/Combining constants with enum/Days of week/out/production/classes/
+/Topics/Custom exceptions/Theory/out/
+/Topics/Custom exceptions/Theory/out/production/classes/
+/Topics/Static members/Project constants and methods/out/
+/Topics/Static members/Project constants and methods/out/production/classes/

@@ -1,0 +1,20 @@
+<h2>Discovering Java input streams</h2>
+<div class="step-text">
+<p>What would be the output of the following Java code? </p><pre><code class="java">import java.io.*; 
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileInputStream fis = new FileInputStream("file.txt");
+            byte[] arr = new byte[3];
+            fis.read(arr); 
+            for(byte b : arr) { 
+                System.out.print((char) b); 
+            }
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre> 
+The 'file.txt' contains the string 'JavaStreams'.
+</div>
